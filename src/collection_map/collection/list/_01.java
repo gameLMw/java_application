@@ -28,5 +28,22 @@ package collection_map.collection.list;
  *           等等
  * */
 
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+
 public class _01 {
+    @Test
+    public void test1() {
+        ArrayList list = new ArrayList();
+
+        //add
+        list.add("张三");
+        list.add(123);
+
+        //addAll
+        list.addAll(list);
+        System.out.println(list);
+
+    }
 }
