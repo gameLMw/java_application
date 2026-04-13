@@ -18,12 +18,12 @@ package collection_map.collection;
  * 用来遍历集合元素
  * */
 
+import collection_map.Person;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.Objects;
 
 public class _01 {
     @Test
@@ -84,35 +84,4 @@ public class _01 {
     }
 }
 
-class Person {
-    String name;
-    int age;
 
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public Person() {
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return age == person.age && Objects.equals(name, person.name);
-    }
-
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(name, age);
-//    }
-}
