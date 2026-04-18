@@ -80,5 +80,15 @@ public class _01 {
         int commpare3 = com3.compare(12, 21);
         System.out.println(commpare3);
     }
+
+    @Test
+    public void test4() {
+        Fly f1 = () -> {
+            System.out.println("flying...");
+        };
+
+        f1.fly();
+        f1.run();
+    }
 }
 
